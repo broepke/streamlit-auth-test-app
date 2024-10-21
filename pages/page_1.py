@@ -9,6 +9,7 @@ On the second page, we're going to first check to see if the user is authenticat
 
 if st.session_state.get("authentication_status") is not None:
     authenticator = st.session_state.get("authenticator")
+    authenticator.logout(location="sidebar", key="logout-demo-app-page-1")
     authenticator.login(location="unrendered", key="authenticator-page-1")
 
 
