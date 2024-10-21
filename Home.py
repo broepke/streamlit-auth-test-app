@@ -6,10 +6,13 @@ from yaml.loader import SafeLoader
 
 st.set_page_config(page_title="Home")
 st.title("Streamlit-Authenticator")
-st.write("Multi-Page App")
-st.write("https://github.com/mkhorasani/Streamlit-Authenticator")
+st.write("""
+A basic implementation of a Multi-Page App using Streamlit and Streamlit-Authenticator.  You can learn more about it at: [https://github.com/mkhorasani/Streamlit-Authenticator](https://github.com/mkhorasani/Streamlit-Authenticator).
+         
+Log in with the following credentials:
+""")
 
-st.write("Login with the following credentials:")
+
 st.code("Username: brian\nPassword: password")
 
 # Load credentials from the YAML file
