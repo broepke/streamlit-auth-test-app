@@ -1,13 +1,13 @@
 cookie:
   expiry_days: 0
-  key: deadpool-app-test-app-key
-  name: deadpool_authenticated_test_app
+  key: streamlit-auth-test-app-key
+  name: streamlit-auth-test-app
 credentials:
   usernames:
-    broepke@gmail.com:
-      email: broepke@gmail.com
+    brian:
+      email: brian@example.com
       failed_login_attempts: 0
       first_name: Brian
       last_name: Roepke
       logged_in: false
-      password: $2b$12$CI2MOIAFgb/XBD9laECG8Omaf75WV3CVRVCwHc/CBqzkyTLdK.STy
+      password: $2b$12$jLY6Vm1eAt1CO9aWaZvX1uucXRh0WxJxfS/y6gGZGKpJsQNfC/ahm
