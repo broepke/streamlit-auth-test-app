@@ -1,0 +1,13 @@
+cookie:
+  expiry_days: 0
+  key: deadpool-app-test-app-key
+  name: deadpool_authenticated_test_app
+credentials:
+  usernames:
+    broepke@gmail.com:
+      email: broepke@gmail.com
+      failed_login_attempts: 0
+      first_name: Brian
+      last_name: Roepke
+      logged_in: false
+      password: $2b$12$CI2MOIAFgb/XBD9laECG8Omaf75WV3CVRVCwHc/CBqzkyTLdK.STy
