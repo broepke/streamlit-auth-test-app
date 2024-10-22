@@ -46,16 +46,13 @@ elif st.session_state["authentication_status"] is None:
     st.warning("Please enter your username and password")
 
 
-
-
-
 # Check for Admin Access
 try:
-    user_roles = st.session_state["config"]["credentials"]["usernames"][st.session_state.username].get("roles")
+    user_roles = st.session_state.get("roles", []) or []
 
     if "admin" in user_roles:
         st.subheader("Admin Tools")
-        
+
         # Download button for updated config.yaml
         def download_config():
             config_data = yaml.dump(st.session_state["config"])
@@ -72,6 +69,5 @@ try:
         with st.expander("Session State for Debugging", icon="💾"):
             st.session_state
 
-except KeyError:
-    pass
-
+except Exception as e:
+    st.error(f"An error occurred: {e}")
