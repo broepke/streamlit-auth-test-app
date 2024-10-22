@@ -11,3 +11,7 @@ credentials:
       last_name: Roepke
       logged_in: false
       password: $2b$12$jLY6Vm1eAt1CO9aWaZvX1uucXRh0WxJxfS/y6gGZGKpJsQNfC/ahm
+      roles:
+      - admin
+      - editor
+      - viewer
