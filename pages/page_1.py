@@ -8,7 +8,7 @@ st.write("""
 On the second page, we're going to first check to see if the user is authenticated by looking at session state.  if it's not, then render a button to go back home.  If the user is authenticated, display the page content.
 """)
 
-if st.session_state.get("authentication_status") is not None:
+if st.session_state.get("authentication_status"):
     authenticator = st.session_state.get("authenticator")
     authenticator.logout(location="sidebar", key="logout-demo-app-page-1")
     authenticator.login(location="unrendered", key="authenticator-page-1")
