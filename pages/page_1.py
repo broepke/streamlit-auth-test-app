@@ -3,7 +3,7 @@ import yaml
 
 st.set_page_config(page_title="Page 1")
 st.title("Page 1")
-st.write(f"Hello {st.session_state.get('name')}, welcome to Page 2!")
+st.write(f"Hello {st.session_state.get('name')}, welcome to Page 1!")
 st.write("""
 On the second page, we're going to first check to see if the user is authenticated by looking at session state.  if it's not, then render a button to go back home.  If the user is authenticated, display the page content.
 """)
